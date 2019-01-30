@@ -6,7 +6,7 @@ Run `python wallp.py unsplash` or `python wallp.py bing` to download the photo o
 
 ## Configuration
 
-By default _wallp_ creates a wallpaper with size 1920x1080 by scaling the downloaded image. Depending on your screen resolution or layout (multiple monitors etc.) you may want to adjust the outputted wallpaper.
+By default _wallp_ creates a wallpaper with size 1920x1080 by scaling the downloaded image. Depending on your screen resolution or layout (multiple monitors etc.) you may want to adjust the resulting wallpaper.
 You can do this in _config.py_. Currently this file contains the following options:
 
 ### providers
