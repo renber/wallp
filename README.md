@@ -24,13 +24,13 @@ __Default value__: `rects = [ImageRect(0, 420, 1920, 1080)]`
 __Multi-monitor example__:
 Imagine you have three Full-HD monitors which are arranged like this (the first one has a horizontal orientation the other two are placed  vertically rotated to the right):
 ```
-                   |--------||--------|
-|-----------------||        ||        |
-|       1         ||   2    ||   3    |
-|                 ||        ||        |
-|-----------------||        ||        |
-                   |--------||--------|
+                 |--------||--------|
+|---------------||        ||        |
+|       1       ||   2    ||   3    |
+|               ||        ||        |
+|---------------||        ||        |
+                 |--------||--------|
 ```
-Using the definition `rects = [ImageRect(0, 420, 1920, 1080), ImageRect(1920, 0, 2160, 1920)]` will place th ephoto scaled on monitor 1 and a second scaled version on monitor 2 and 3 seamlessly.
+Setting the definition to `rects = [ImageRect(0, 420, 1920, 1080), ImageRect(1920, 0, 2160, 1920)]` will place the photo scaled on monitor 1 and a second scaled version on monitor 2 and 3 seamlessly.
 
 Note: The created wallpaper image always has the size to exactly hold the image rects (i.e. maximum horizontal and vertical extent from the rects definition). In the sample case this would be 4080x1920 pixels.
