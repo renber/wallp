@@ -19,7 +19,7 @@ Definition of the wallpaper layout.
 An enumeration of ImageRect values which each define a location (x,y) and size(width,height) where the downloaded image should be put on the wallpaper. That means, having multiple ImageRect entries here will put the photo multiple times on the wallpaper. For that the image is resized to each ImageRect's size individually while its aspect ratio is kept, if the target area is too small to hold the resized image it is centered in the area and cropped.
 This allows to easily define monitor overlapping images in multi-monitor environments.
 
-__Default value__: `rects = [ImageRect(0, 420, 1920, 1080)]`
+__Default value__: `rects = [ImageRect(0, 0, 1920, 1080)]`
 
 __Multi-monitor example__:
 Imagine you have three Full-HD monitors which are arranged like this (the first one has a horizontal orientation the other two are placed  vertically rotated to the right):
