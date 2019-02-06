@@ -35,10 +35,7 @@ def main():
     
     print("Setting Wallpaper")
     img.save("wall.jpg", "JPEG")
-    set_wallpaper("wall.jpg")
-    # Give the OS some time to load the file then delete it
-    time.sleep(1)
-    os.remove("wall.jpg")
+    set_wallpaper("wall.jpg")    
 
 if __name__ == '__main__':
     main()

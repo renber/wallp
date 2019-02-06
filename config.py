@@ -6,4 +6,4 @@ from py.im_utils import *
 providers = {"unsplash": UnsplashPhotoProvider(), "bing": BingPhotoProvider()}
 
 # wallpaper arrangement
-rects = [ImageRect(0, 0, 1920, 1080)]
+rects = [ImageRect(0, 420, 1920, 1080), ImageRect(1920, 0, 2160, 1920)]
