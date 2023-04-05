@@ -1,7 +1,14 @@
 from PIL import Image
 from collections import namedtuple
 
-ImageRect = namedtuple('ImageRect', 'x y width height')
+class ImageRect:
+
+    def __init__(self, x, y, width, height, provider = None):
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
+        self.provider = provider
 
 def resize_keep_aspect(img, targetWidth, targetHeight, qualitiy):
     '''

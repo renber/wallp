@@ -8,6 +8,6 @@ def getCommandLineOptions():
                         type=str,
                         metavar="provider",
                         choices=config.providers.keys(),
-                        help="The service to retrieve the image from (" + ', '.join(config.providers.keys()) + ")")
+                        help="The service to retrieve the image from (" + ', '.join(config.providers.keys()) + ")")    
 
     return parser.parse_args()

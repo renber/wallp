@@ -19,7 +19,6 @@ def main():
     
     # read photo of the day link
     provider = config.providers[opt.provider]    
-
     photo = provider.get_daily()
 
     if photo is None:
@@ -30,7 +29,7 @@ def main():
     img = Image.new('RGB', (targetWidth, targetHeight), color = 'white')
 
     for r in rects:            
-        resizedPhoto = resize_keep_aspect(photo, r.width, r.height, Image.LANCZOS )
+        resizedPhoto = resize_keep_aspect(photo, r.width, r.height, Image.Resampling.LANCZOS )
         img.paste(resizedPhoto, (r.x, r.y))
     
     print("Setting Wallpaper")
